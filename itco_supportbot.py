@@ -148,6 +148,7 @@ def back_to_select_specialization(message):
         bot.delete_message(message.chat.id, message.message_id - 2)
         bot.delete_message(message.chat.id, message.message_id - 1)
         bot.delete_message(message.chat.id, message.message_id)
+        select_specialization(message)
 
 def none_stop():
     bot.polling(none_stop = True)
